@@ -159,6 +159,7 @@ Why do we use it?
 How do we use it? <br />
 To deploy source files in a directory:
 - `sfdx force:source:deploy -p path/to/source -u targetOrg` <br />
+
 To deploy all Apex Classes to the org:
 - `sfdx force:source:deploy -m ApexClass`
 The `-m` tag can be used to deploy any metadata to the org.
