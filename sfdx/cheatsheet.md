@@ -21,9 +21,7 @@ Why do we use it?
 
 How do we use it?
 
-- `sfdx force:org:create -f config/enterprise-scratch-def.json -a MyScratchOrg -v devHub`
-When creating a new scratch org, the targetdevhubusername (`-v`) must be a Dev Hub org
-whilst the configuration file is specified with `-f`.
+- `sfdx force:org:create -f config/enterprise-scratch-def.json -a MyScratchOrg -v devHub` - When creating a new scratch org, the targetdevhubusername (`-v`) must be a Dev Hub org whilst the configuration file is specified with `-f`.
 
 When do we use it?
 - When a new environment for developing a workplace item is required.
@@ -37,8 +35,7 @@ Why do we use it?
 - To delete a scratch org or sandbox.
 
 How do we use it?
-- `sfdx force:org:delete -u MyOrgAlias`
-Utilise the `-u` parameter to name the environment for deletion.
+- `sfdx force:org:delete -u MyOrgAlias` - Utilise the `-u` parameter to name the environment for deletion.
 
 When do we use it?
 - When an environment is deemed to be no longer required for use.
@@ -52,8 +49,7 @@ Why do we use it?
 - To display key information about the target org.
 
 How do we use it?
-- `sfdx force:org:display -u TestOrg1`
-Utilise the `-u` parameter to select the org to display.
+- `sfdx force:org:display -u TestOrg1` - Utilise the `-u` parameter to select the org to display.
 
 When do we use it?
 - When information about the target org is required. Particularly useful in
@@ -140,9 +136,9 @@ Why do we use it?
 How do we use it? <br />
 To retrieve source files in a directory:
 - `sfdx force:source:retrieve -p path/to/source -u targetOrg` <br />
+
 To retrieve all Apex Classes in the org:
-- `sfdx force:source:retrieve -m ApexClass`
-The `-m` tag can be used to target any metadata within the org.
+- `sfdx force:source:retrieve -m ApexClass` - The `-m` tag can be used to target any metadata within the org.
 
 When do we use it?
 - To retrieve particular metadata from an org. Note that the source retrieved overwrites
@@ -161,8 +157,7 @@ To deploy source files in a directory:
 - `sfdx force:source:deploy -p path/to/source -u targetOrg` <br />
 
 To deploy all Apex Classes to the org:
-- `sfdx force:source:deploy -m ApexClass`
-The `-m` tag can be used to deploy any metadata to the org.
+- `sfdx force:source:deploy -m ApexClass` - The `-m` tag can be used to deploy any metadata to the org.
 
 When do we use it?
 - To deploy particular metadata to an org. Note that the source deployed overwrites
