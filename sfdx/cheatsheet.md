@@ -14,7 +14,7 @@ They consist of numerous tools for developement on the Salesforce Platform.
 Use these commands to manage your orgs within Salesforce CLI.
 Useful for creating, deleting, authorizing and opening your org environments.
 
-#### force:org:create
+### force:org:create
 
 Why do we use it?
 - To create a scratch org or sandbox.
@@ -31,7 +31,7 @@ When do we use it?
 Documentation:
 [force:org:create](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_force_org.htm#cli_reference_force_org_create)
 
-#### force:org:delete
+### force:org:delete
 
 Why do we use it?
 - To delete a scratch org or sandbox.
@@ -46,7 +46,7 @@ When do we use it?
 Documentation:
 [force:org:delete](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_force_org.htm#cli_reference_force_org_delete)
 
-#### force:org:display
+### force:org:display
 
 Why do we use it?
 - To display key information about the target org.
@@ -62,7 +62,7 @@ showing login credentials.
 Documentation:
 [force:org:display](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_force_org.htm#cli_reference_force_org_display)
 
-#### force:org:list
+### force:org:list
 
 Why do we use it?
 - To display a list of currently authorized orgs.
@@ -78,7 +78,7 @@ When do we use it?
 Documentation:
 [force:org:list](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_force_org.htm#cli_reference_force_org_list)
 
-#### force:org:open
+### force:org:open
 
 Why do we use it?
 - To open the current or targetted org.
@@ -98,7 +98,7 @@ Use these commands to push and pull source from your environments.
 Useful for pulling applied changes from an org to then commit to a repository or
 pushing componenets of a repository to a specific environment.
 
-#### force:source:pull
+### force:source:pull
 
 Why do we use it?
 - To pull all source from a scratch org to a repository.
@@ -115,7 +115,7 @@ An alternative to this is using force:org:retrieve (see below).
 Documentation:
 [force:source:pull](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_force_source.htm#cli_reference_force_source_pull)
 
-#### force:source:push
+### force:source:push
 
 Why do we use it?
 - To push all source from a repository to a scratch org.
@@ -132,14 +132,14 @@ An alternative to this is using force:org:deploy (see below).
 Documentation:
 [force:source:push](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_force_source.htm#cli_reference_force_source_push)
 
-#### force:source:retrieve
+### force:source:retrieve
 
 Why do we use it?
 - To retrieve certain metadata from an org to repository.
 
 How do we use it? <br />
 To retrieve source files in a directory:
-- `sfdx force:source:retrieve -p path/to/source -u targetOrg`
+- `sfdx force:source:retrieve -p path/to/source -u targetOrg` <br />
 To retrieve all Apex Classes in the org:
 - `sfdx force:source:retrieve -m ApexClass`
 The `-m` tag can be used to target any metadata within the org.
@@ -151,14 +151,14 @@ the corresponding source files in your local filesystem.
 Documentation:
 [force:source:retrieve](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_force_source.htm#cli_reference_force_source_retrieve)
 
-#### force:source:deploy
+### force:source:deploy
 
 Why do we use it?
 - To deploy certain metadata to an org from a repository.
 
 How do we use it? <br />
 To deploy source files in a directory:
-- `sfdx force:source:deploy -p path/to/source -u targetOrg`
+- `sfdx force:source:deploy -p path/to/source -u targetOrg` <br />
 To deploy all Apex Classes to the org:
 - `sfdx force:source:deploy -m ApexClass`
 The `-m` tag can be used to deploy any metadata to the org.
